@@ -1,0 +1,12 @@
+{
+  "name": "keep-alive",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/sd-yang/react-keepAlive.git",
+  "author": "rick <ysdvictor@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
