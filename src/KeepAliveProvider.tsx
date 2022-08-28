@@ -13,12 +13,12 @@ const KeepAliveProvider = ({ children }) => {
   };
 
   return (
-    <KeepContext.provider value={providerValues}>
+    <KeepContext.Provider value={providerValues}>
       {children}
       {cacheStore.map((item) => (
         <KeepAliveScope key={item.cacheId} {...item} />
       ))}
-    </KeepContext.provider>
+    </KeepContext.Provider>
   );
 };
 

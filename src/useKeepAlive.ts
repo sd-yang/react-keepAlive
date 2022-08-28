@@ -1,8 +1,8 @@
 import { useRef, useState } from 'react';
-import keepAliveImpl from './keepAliveImpl';
+import keepAliveImpl from './KeepAliveImpl';
 
 const useKeepAlive = () => {
-  const instance = useRef(false);
+  const instance = useRef(null);
   const [, setUpdate] = useState();
   if (!instance.current) {
     instance.current = new keepAliveImpl(setUpdate);

@@ -5,8 +5,24 @@
   "repository": "https://github.com/sd-yang/react-keepAlive.git",
   "author": "rick <ysdvictor@outlook.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "yarn clean:dist && rollup -c rollup.config.js",
+    "clean:dist": "rm -rf dist"
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/react": "^18.0.17",
+    "rollup": "^2.78.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.33.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.2"
   }
 }
